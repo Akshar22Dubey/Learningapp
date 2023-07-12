@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog</title>
+    <link rel="stylesheet" href="stylepoem.css">
+    <style>
+
+        /*  animation to the heading */
+h1 {
+  animation: heading 1.5s ease-in-out;
+}
+
+/* animation to the poem1 */
+p.firstpoem {
+  animation-name: firstpoemanimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+
+.firstpoem
+{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 3s , transform 4s;
+}
+.firstpoem.show1
+{
+    opacity: 100%;
+    transform: translateX(0);
+}
+
+.firstpoem:hover {
+  transform: translateY(-25px); 
+  transition: 0.5s linear;  
+}
+
+
+
+
+/*  animation to the poem2 */
+p.secondpoem {
+  animation-name: secondpoemanimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+
+.secondpoem
+{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 3s , transform 4s;
+}
+.secondpoem.show2
+{
+    opacity: 100%;
+    transform: translateX(0);
+}
+
+.secondpoem:hover {
+  transform: translateY(-25px); 
+  transition: 0.5s linear;  
+}
+/* animation to the poem3 */
+p.thirdpoem {
+  animation-name: thirdpoemanimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+
+.thirdpoem
+{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 3s , transform 4s;
+}
+.thirdpoem.show3
+{
+    opacity: 100%;
+    transform: translateX(0);
+}
+.thirdpoem:hover {
+  transform: translateY(-25px); 
+  transition: 0.5s linear;  
+}
+/*  animation to the poem4 */
+p.fourthpoem {
+  animation-name: fourthpoemanimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+
+.fourthpoem
+{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 3s , transform 4s;
+}
+.fourthpoem.show4
+{
+    opacity: 100%;
+    transform: translateX(0);
+}
+.fourthpoem:hover {
+  transform: translateY(-25px); 
+  transition: 0.5s linear;  
+}
+/*  fadeIn animation */
+@keyframes heading{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.footercss
+{
+    background: linear-gradient(245.59deg ,#4d9559 0% , #38703d 28.53% , #133917 75.52%);;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>POEMS</h1>
+     
+    </header>
+
+    <main>
+        <section class="firstpoem">
+            <h2>Twinkle, Twinkle, Little Star</h2>
+            <p >Twinkle, twinkle, little star,
+            How I wonder what you are!
+            Up above the world so high,
+            Like a diamond in the sky.
+            
+            When the blazing sun is gone,
+            When he nothing shines upon,
+            Then you show your little light,
+            Twinkle, twinkle, all the night.
+            
+            Then the traveler in the dark
+            Thanks you for your tiny spark;
+            He could not see which way to go,
+            If you did not twinkle so.
+            
+            In the dark blue sky you keep,
+            And often through my curtains peep,
+            For you never shut your eye
+            Till the sun is in the sky.
+            
+            Twinkle, twinkle, little star,
+            How I wonder what you are!
+            Up above the world so high,
+            Like a diamond in the sky.
+</p>
+        </section>
+
+        <section  class="secondpoem" >
+            <h2>Rainbow Friends</h2>
+            <p >Red, orange, yellow, green,
+            The brightest colors ever seen.
+            Blue, indigo, and violet too,
+            Painting rainbows just for you.
+            
+            With colors bold and bright,
+            We dance and laugh with all our might.
+            Hand in hand, we skip along,
+            Singing a happy, joyful song.
+            
+            Rainbow friends, forever true,
+            We'll stick together just like glue.
+            With love and kindness, we will blend,
+            Colors of the rainbow, our truest friends.
+</p>
+        </section>
+
+        <section  class="thirdpoem">
+            <h2>The Silly Monkey</h2>
+            <p >There was a silly monkey,
+            With fur so soft and funky.
+            He swung from tree to tree,
+            As happy as can be.
+            
+            He made funny faces,
+            And played in all the spaces.
+            Jumping and hopping around,
+            Making silly monkey sounds.
+            
+            With a mischievous grin,
+            He would always win.
+            The silly monkey, oh so wild,
+            Was loved by every child.
+</p>
+        </section>
+
+
+
+        <section class="fourthpoem">
+            <h2>I'm a Little Teapot</h2>
+            <p>I'm a little teapot, short and stout,
+            Here is my handle, here is my spout.
+            When I get all steamed up, hear me shout,
+            Tip me over and pour me out!
+            
+            I'm a very special pot, it's true,
+            Here's an example of what I can do.
+            I can change my handle and my spout,
+            Just tilt me over and pour me out!
+            
+            I'm a little teapot, short and stout,
+            Here is my handle, here is my spout.
+            When I get all steamed up, hear me shout,
+            Tip me over and pour me ou
+            </p>
+        </section>
+    </main>
+
+    <footer class="footercss">
+        <p >&copy; 2023 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+   
+    setTimeout(function()
+    {  
+         var poem1 = document.querySelector('.firstpoem')
+       poem1.classList.add('show1');
+    }, 100)
+    
+    setTimeout(function () {
+            var poem1 = document.querySelector('.secondpoem')
+            poem1.classList.add('show2');
+        }, 100)
+
+        setTimeout(function () {
+                var poem1 = document.querySelector('.thirdpoem')
+                poem1.classList.add('show3');
+            }, 100)
+
+            setTimeout(function () {
+                    var poem1 = document.querySelector('.fourthpoem')
+                    poem1.classList.add('show4');
+                }, 100)
+
+
+</script>
+</html>
