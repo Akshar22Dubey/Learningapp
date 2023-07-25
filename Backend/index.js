@@ -87,7 +87,7 @@ app.post("/signup", async function (req, res) {
 
 // MONGO KA CODE
 
-app.listen(port, function (err) {
+app.listen(process.env.PORT||port, function (err) {
   if (err) {
     console.error("Error starting the server:", err);
   } else {
