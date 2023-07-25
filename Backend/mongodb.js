@@ -8,7 +8,7 @@ mongoose.connect("mongodb+srv://aksharansh123:akshar2003@cluster0.ny7z8bo.mongod
     console.log("failed tp login");
 })
 
-const LogInSchema = new mongoose.Schema({
+const collections = new mongoose.Schema({
     First_name:{
         type:String,
         required:true
@@ -23,6 +23,6 @@ const LogInSchema = new mongoose.Schema({
     },
 })
 
-const collection = new mongoose.model("Collection",LogInSchema)
+const collection = new mongoose.model("Collection",collections)
 
 module.exports=collection
